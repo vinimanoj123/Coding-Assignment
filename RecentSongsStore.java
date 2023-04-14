@@ -40,13 +40,13 @@ public List<String> getRecentSongs(String user) {
         store.addSong("user1", "S1");
         store.addSong("user2", "S2");
         store.addSong("user3", "S3");
-        System.out.println(store.getRecentSongs("user1")); // [S3, S2, S1]
+        System.out.println(store.getRecentSongs("user3")); // [S3, S2, S1]
 
         store.addSong("user2", "S2");
         System.out.println(store.getRecentSongs("user2")); // [S2, S4, S3]
 
-        store.addSong("user3", "S1");
-        System.out.println(store.getRecentSongs("user3")); // [S1, S2, S4]
+        store.addSong("user1", "S1");
+        System.out.println(store.getRecentSongs("user1")); // [S1, S2, S4]
     }
 
 }
